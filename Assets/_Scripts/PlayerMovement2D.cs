@@ -38,7 +38,7 @@ public class PlayerMovement2D : MonoBehaviour
 
         if (_inputBuffer.Count > 0)
         {
-            if (_inputBuffer.Peek() == KeyCode.Space && _characterController.m_Grounded)
+            if (_inputBuffer.Peek() == KeyCode.Space && !_characterController.hasJumped)
             {
                 _inputBuffer.Dequeue();
                 _jump = true;
