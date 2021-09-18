@@ -72,11 +72,7 @@ public class CharacterController2D : MonoBehaviour
 				
             }
         }
-        
         if (!m_Grounded) timeOnAir += Time.deltaTime; // We count the time we are on air (coyote time purposes)
-        
-        Debug.Log(timeOnAir);
-        
     }
 
     public void Move(float moveDir, bool jump)

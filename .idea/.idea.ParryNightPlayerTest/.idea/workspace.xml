@@ -9,14 +9,18 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/B0E795E4-8CF0-4D7A-9193-EA9447AF406A/ea/340b554f/Physics2D.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/_Scripts/BulletSpawner.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/_Scripts/PlayerMovement2D.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/DA6AB582-61CA-4BF8-8D22-45FA0B5E29FF/2e/e557da85/CharacterController.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/_Scripts/BulletBehaviour.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Assets/_Scripts/CharacterController2D.cs" />
         <option value="$PROJECT_DIR$/Assets/_Scripts/PlayerMovement2D.cs" />
+        <option value="$PROJECT_DIR$/Assets/_Scripts/CharacterController2D.cs" />
+        <option value="$PROJECT_DIR$/Assets/_Scripts/BulletBehaviour.cs" />
+        <option value="$PROJECT_DIR$/Assets/_Scripts/BulletSpawner.cs" />
       </list>
     </option>
   </component>
@@ -68,7 +72,7 @@
       <option name="presentableId" value="Default" />
       <updated>1631966214477</updated>
       <workItem from="1631966221892" duration="6038000" />
-      <workItem from="1631999976589" duration="3578000" />
+      <workItem from="1631999976589" duration="5064000" />
     </task>
     <servers />
   </component>
