@@ -12,6 +12,11 @@ public class BulletBehaviour : MonoBehaviour
     {
         _direction = direction;
     }
+
+    public void DestroyBullet()
+    {
+        this.gameObject.SetActive(false);
+    }
     
     // Update is called once per frame
     void Update()

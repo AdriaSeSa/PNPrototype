@@ -11,6 +11,7 @@
           <e p="BulletSpawner.cs" t="Include" />
           <e p="CharacterController2D.cs" t="Include" />
           <e p="PlayerMovement2D.cs" t="Include" />
+          <e p="PlayerParrySystem.cs" t="Include" />
         </e>
       </e>
       <e p="obj" t="ExcludeRecursive" />
