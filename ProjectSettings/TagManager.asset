@@ -5,6 +5,7 @@ TagManager:
   serializedVersion: 2
   tags:
   - Enemy Projectile
+  - Enemy
   layers:
   - Default
   - TransparentFX
@@ -37,7 +38,7 @@ TagManager:
   - 
   - 
   - 
-  - 
+  - Player
   m_SortingLayers:
   - name: Default
     uniqueID: 0

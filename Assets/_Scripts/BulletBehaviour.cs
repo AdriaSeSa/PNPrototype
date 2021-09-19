@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -13,7 +14,7 @@ public class BulletBehaviour : MonoBehaviour
         _direction = direction;
     }
 
-    public void DestroyBullet()
+    private void DestroyBullet()
     {
         this.gameObject.SetActive(false);
     }
@@ -22,5 +23,13 @@ public class BulletBehaviour : MonoBehaviour
     void Update()
     {
         transform.Translate(_direction * _speed * Time.deltaTime);
+    }
+
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.gameObject.CompareTag("Enemy Projectile") || other.gameObject.CompareTag("Enemy"))
+            return;
+        
+        DestroyBullet();
     }
 }
