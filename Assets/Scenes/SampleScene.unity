@@ -540,41 +540,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 565759326}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &656469146 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8622413608201954603, guid: 3e541a9e15d53bf438a2b5e29407d336,
-    type: 3}
-  m_PrefabInstance: {fileID: 8622413608510577305}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &656469153
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 656469146}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e2f0df3bc0dbb1e41a48460f78478169, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  currentHealth: 3
-  invulnerabilitySeconds: 2.5
-  enemyProjectileTag: Enemy Projectile
---- !u!114 &656469154
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 656469146}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bbacedf9bed3e1d41bed4ddc8d15e03b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  blockingTime: 2
-  isBlocking: 0
 --- !u!1001 &734833858
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -999,12 +964,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 710b40aedccbf1b47ad83fd72b1d2c7c, type: 3}
---- !u!61 &1148860046 stripped
-BoxCollider2D:
-  m_CorrespondingSourceObject: {fileID: 5851236030018414534, guid: 3e541a9e15d53bf438a2b5e29407d336,
-    type: 3}
-  m_PrefabInstance: {fileID: 8622413608510577305}
-  m_PrefabAsset: {fileID: 0}
 --- !u!114 &1297082888 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 5589827895255786527, guid: 710b40aedccbf1b47ad83fd72b1d2c7c,
@@ -1552,69 +1511,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 519420028, guid: 3e541a9e15d53bf438a2b5e29407d336, type: 3}
-      propertyPath: m_Layer
-      value: 31
-      objectReference: {fileID: 0}
-    - target: {fileID: 955424425391311871, guid: 3e541a9e15d53bf438a2b5e29407d336,
-        type: 3}
-      propertyPath: parryArea
-      value: 
-      objectReference: {fileID: 1148860046}
-    - target: {fileID: 955424425391311871, guid: 3e541a9e15d53bf438a2b5e29407d336,
-        type: 3}
-      propertyPath: parryDuration
-      value: 0.1
-      objectReference: {fileID: 0}
-    - target: {fileID: 955424425391311871, guid: 3e541a9e15d53bf438a2b5e29407d336,
-        type: 3}
-      propertyPath: parryFailDuration
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5851236030018414534, guid: 3e541a9e15d53bf438a2b5e29407d336,
-        type: 3}
-      propertyPath: m_Enabled
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5897847510601359466, guid: 3e541a9e15d53bf438a2b5e29407d336,
-        type: 3}
-      propertyPath: m_Layer
-      value: 31
-      objectReference: {fileID: 0}
-    - target: {fileID: 6083737584132420418, guid: 3e541a9e15d53bf438a2b5e29407d336,
-        type: 3}
-      propertyPath: m_Layer
-      value: 31
-      objectReference: {fileID: 0}
-    - target: {fileID: 6083737584132420418, guid: 3e541a9e15d53bf438a2b5e29407d336,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7179476981803389278, guid: 3e541a9e15d53bf438a2b5e29407d336,
-        type: 3}
-      propertyPath: m_Layer
-      value: 31
-      objectReference: {fileID: 0}
-    - target: {fileID: 8622413607699374743, guid: 3e541a9e15d53bf438a2b5e29407d336,
-        type: 3}
-      propertyPath: m_Layer
-      value: 31
-      objectReference: {fileID: 0}
-    - target: {fileID: 8622413607825371712, guid: 3e541a9e15d53bf438a2b5e29407d336,
-        type: 3}
-      propertyPath: m_Layer
-      value: 31
-      objectReference: {fileID: 0}
     - target: {fileID: 8622413608201954603, guid: 3e541a9e15d53bf438a2b5e29407d336,
         type: 3}
       propertyPath: m_Name
       value: Square
-      objectReference: {fileID: 0}
-    - target: {fileID: 8622413608201954603, guid: 3e541a9e15d53bf438a2b5e29407d336,
-        type: 3}
-      propertyPath: m_Layer
-      value: 31
       objectReference: {fileID: 0}
     - target: {fileID: 8622413608201954607, guid: 3e541a9e15d53bf438a2b5e29407d336,
         type: 3}

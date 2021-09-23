@@ -10,6 +10,7 @@
           <e p="BulletBehaviour.cs" t="Include" />
           <e p="BulletSpawner.cs" t="Include" />
           <e p="CharacterController2D.cs" t="Include" />
+          <e p="FakeChild.cs" t="Include" />
           <e p="PlayerBlock.cs" t="Include" />
           <e p="PlayerHealth.cs" t="Include" />
           <e p="PlayerMovement2D.cs" t="Include" />

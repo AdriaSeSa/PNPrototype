@@ -7,7 +7,14 @@ using UnityEngine;
 public class PlayerBlock : MonoBehaviour
 {
    [SerializeField] private float blockingTime;
+   [SerializeField ]private float _currentBlockingTime;
    public bool isBlocking;
+
+   private void Start()
+   {
+      _currentBlockingTime = blockingTime;
+   }
+
    private void Update()
    {
       if (Input.GetKey(KeyCode.Mouse1))
@@ -19,6 +26,27 @@ public class PlayerBlock : MonoBehaviour
       {
          Block(false);
       }
+
+      if (isBlocking)
+      {
+         if (_currentBlockingTime > 0)
+         {
+            _currentBlockingTime -= Time.deltaTime;
+         }
+         else
+         {
+            Block(false);
+         }
+         
+      }
+      else
+      {
+         if (_currentBlockingTime < blockingTime)
+         {
+            _currentBlockingTime += Time.deltaTime;
+         }
+      }
+      
    }
 
    private void Block(bool blocking)

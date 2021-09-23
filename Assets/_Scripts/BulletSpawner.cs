@@ -26,7 +26,7 @@ public class BulletSpawner : MonoBehaviour
             {
                 bullets[i].gameObject.SetActive(true);
                 bullets[i].transform.position = transform.position;
-                bullets[i].ShootBullet(Vector2.left);
+                bullets[i].ShootBullet(Vector2.left, true, transform);
                 break;
             }
         }

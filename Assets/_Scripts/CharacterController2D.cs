@@ -25,6 +25,7 @@ public class CharacterController2D : MonoBehaviour
 
     
     //TODO:Change Unity Events for normal events / boolean events
+    //TODO: Create Event for flipping character, so it can flip attached to it components as well
     public UnityEvent OnJumpEvent;		//Calls when jumping
     public UnityEvent OnLandEvent;		// Calls when landing on floor
     public UnityEvent OnRunEvent;		//Calls when running

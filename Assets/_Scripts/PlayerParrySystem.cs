@@ -11,8 +11,7 @@ public class PlayerParrySystem : MonoBehaviour
     public float parryFailDuration;
     public Collider2D parryArea;
     private IEnumerator _playParry;
-    public bool isBlocking;
-    private bool isParrySuccesful; // Determines if the parry action has actually stopped a projectile
+    private bool _isParrySuccesful; // Determines if the parry action has actually stopped a projectile
     
     // Update is called once per frame
     void Update()
@@ -20,16 +19,6 @@ public class PlayerParrySystem : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Mouse1))
         {
             Parry();
-        }
-
-        if (Input.GetKey(KeyCode.Mouse1))
-        {
-            Block(true);
-        }
-
-        if (Input.GetKeyUp(KeyCode.Mouse1))
-        {
-            Block(false);
         }
     }
 
@@ -43,25 +32,27 @@ public class PlayerParrySystem : MonoBehaviour
         }
 
     }
-
-    private void Block(bool blocking)
-    {
-        isBlocking = blocking;
-    }
-
+    
     private IEnumerator PlayParry()
     {
+        // Activate Parry Area
+        
         _playParry = PlayParry();
         parryArea.enabled = true;
         yield return new WaitForSecondsRealtime(parryDuration);
         
-        if (!isParrySuccesful)
+        // After parry duration, we check if the parry was succesful
+        
+        if (!_isParrySuccesful)
         {
-            yield return new WaitForSecondsRealtime(parryFailDuration);
+            // If not succesful, we activate the parry Fail extra duration
             parryArea.enabled = false;
+            yield return new WaitForSecondsRealtime(parryFailDuration);
         }
 
-        isParrySuccesful = false;
+        // If succesful, we set the parry as available again
+        
+        _isParrySuccesful = false;
         _playParry = null;
         parryArea.enabled = false;
     }
@@ -70,7 +61,8 @@ public class PlayerParrySystem : MonoBehaviour
     {
         if (other.CompareTag(enemyProjectileTag))
         {
-            isParrySuccesful = true;
+            _isParrySuccesful = true;
+            Debug.Log("Parry!");
         }
     }
 }

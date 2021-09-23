@@ -25,6 +25,7 @@ public class PlayerHealth : MonoBehaviour
             if (!_playerBlock.isBlocking)
             {
                 currentHealth--;
+                Debug.Log("Hit!"); 
                 StartCoroutine(InvulnerabilityTime());
             }
                 
